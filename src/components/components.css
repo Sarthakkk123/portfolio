@@ -1,0 +1,36 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #3498db;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+    color: #fff;
+}
+
+.navbar button:hover {
+    background-color: #59bdff;
+    color: #fff;
+}
+
+/* Styling for the BottomNavigationAction */
+
+.css-1gh6k7f-MuiBottomNavigationAction-label {
+    opacity: 1 !important;
+    color: #1976d2 !important;
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+    background-color: #d9d9ff;
+}
+
+/* Styling for the selectedNavItem class */
+
+.selectedNavItem {
+    color: #2c3e50;
+    /* Color when selected */
+}
