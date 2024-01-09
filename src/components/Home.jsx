@@ -1,14 +1,34 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from "react";
 import homeImg from "../assets/profileImage.png";
 import reactImg from "../assets/reactIMG.png";
 import javaScriptImg from "../assets/javaScript.png";
 import htmlImg from "../assets/html.png";
+import webDevelopment from "../assets/webDevelopment.jpg"
+import gaming from "../assets/gaming.jpg"
 
 const Home = () => {
+  const initialPhrases = [
+    { text: "React", image: reactImg },
+    { text: "Web Development", image: webDevelopment },
+    { text: "Gaming", image: gaming },
+  ];
+  const [phrases, setPhrases] = useState(initialPhrases);
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % initialPhrases.length);
+    }, 2000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [currentPhraseIndex, initialPhrases.length]);
+
   return (
     <>
       <div className="container">
-        <div className="col-lg-12">
+        <div className="col-lg-12 slideIn">
           <div className="col-lg-2 intro d-flex">
             <div style={{ "font-size": "3rem" }}>🖐️</div>
             <div className="">
@@ -19,11 +39,16 @@ const Home = () => {
         </div>
 
         <div className="col-md-12 d-flex">
-          <div className="col-md-2 introText slideIn">
-            <p>I Love React</p>
+          <div className="col-md-3 introText slideIn">
+            <div className="d-flex">
+              <p style={{marginRight: "1rem"}}>{phrases[currentPhraseIndex].text}</p>
+              {phrases[currentPhraseIndex].image && (
+                <img src={phrases[currentPhraseIndex].image} alt="" style={{ height: "2rem" }} />
+              )}
+            </div>
           </div>
           <div
-            className="col-md-8"
+            className="col-md-7"
             style={{
               "align-items": "center",
               display: "flex",

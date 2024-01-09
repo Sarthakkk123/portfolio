@@ -38,9 +38,7 @@
     height: 28rem;
     width: 28rem;
     border-radius: 50%;
-    background: linear-gradient(to top, #3b9cfc, rgb(202, 242, 255));
-    /* Adjust colors as needed */
-    /* transition: all 1.5s ease-in; */
+    background: linear-gradient(to top, #57acff, rgb(227 248 255));
     animation: fadeInAndScaleUp 1s ease-in-out;
 }
 
@@ -78,6 +76,9 @@
     align-items: center;
     display: flex;
     font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: -3rem;
+    margin-left: 3rem;
 }
 
 .logoImg {
