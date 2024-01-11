@@ -43,7 +43,7 @@ const LabelBottomNavigation = () => {
 
 const Navbar = () => {
   return (
-    <div style={{ marginBottom: "60px" }}>
+    <div style={{ marginBottom: "40px" }}>
       <LabelBottomNavigation />
     </div>
   );

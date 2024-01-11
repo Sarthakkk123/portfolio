@@ -56,7 +56,7 @@ const About = () => {
             <div className="text-container">
               <div className="title">Software Engineer</div>
               <div className="description">
-                I'm currently working as an ABAP developer in Deloitte where I'm
+                I'm currently working as an React developer in Infosys where I'm
                 responsible for large scale project development.
               </div>
             </div>

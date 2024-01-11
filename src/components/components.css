@@ -6,16 +6,19 @@
     display: flex;
     justify-content: space-around;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 !important;
 }
 
 .nav-link {
     color: #fff;
     text-decoration: none;
+    height: 3.5rem;
 }
 
 .nav-link:hover {
     background-color: #59bdff;
-    color: #fff;
+    color: #fff !important;
+    font-size: 1.5rem;
 }
 
 .css-1gh6k7f-MuiBottomNavigationAction-label {
@@ -40,34 +43,33 @@
     border-radius: 50%;
     background: linear-gradient(to top, #57acff, rgb(227 248 255));
     animation: fadeInAndScaleUp 1s ease-in-out;
-}
-
-@keyframes fadeInAndScaleUp {
+  }
+  
+  @keyframes fadeInAndScaleUp {
     from {
-        opacity: 0;
-        transform: scale(0.1);
+      opacity: 0;
+      transform: scale(0.1);
     }
-
+  
     to {
-        opacity: 1;
-        transform: scale(1);
+      opacity: 1;
+      transform: scale(1);
     }
-}
-
-
-.intro {
+  }
+  
+  .intro {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
     justify-content: space-around;
     border-radius: 2rem;
-}
-
-.name {
+  }
+  
+  .name {
     font-size: 2rem;
     font-weight: bold;
-}
-
-.introText {
+  }
+  
+  .introText {
     margin-top: 4rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 4rem;
@@ -77,17 +79,52 @@
     display: flex;
     font-size: 1.3rem;
     font-weight: 500;
-    margin-right: -3rem;
-    margin-left: 3rem;
-}
-
-.logoImg {
+  }
+  
+  .logoImg {
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
     width: 7.5rem;
-    ;
-}
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .intro,
+    .introText {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .circle {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .logoImg {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 
 @keyframes slideIn {
     from {
@@ -153,11 +190,11 @@
     font-weight: 700;
 }
 
-.blueTxt{
+.blueTxt {
     color: blue;
 }
 
-.aboutImg{
+.aboutImg {
     height: 12rem;
     border-radius: 2rem;
 }
@@ -166,29 +203,57 @@
 
 
 .boxes {
-    text-align: left; /* Align text to the left within the box */
-  }
-  
-  .img-container {
-    /* width: 100%; */
-  }
-  
-  .aboutImg {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .text-container {
-    padding: 15px; /* Add padding around the text for better readability */
-  }
-  
-  .title {
+    text-align: left;
+    /* Align text to the left within the box */
+}
+
+/* .img-container {
+    width: 100%;
+  } */
+
+.aboutImg {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.text-container {
+    padding: 15px;
+    /* Add padding around the text for better readability */
+}
+
+.title {
     font-weight: bold;
     font-size: 1.2em;
-  }
-  
-  .description {
+}
+
+.description {
     font-size: 0.9em;
     color: #6b7688;
-  }
-  
+}
+
+
+
+
+
+/* skills css */
+
+
+
+
+.skillsImage {
+    width: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.eduYear{
+    color: blue;
+    font-weight: 600;
+}
+
+.board{
+    font-weight: 700;
+}
