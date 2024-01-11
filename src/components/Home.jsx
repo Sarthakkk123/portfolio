@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % initialPhrases.length);
-    }, 2000);
+    }, 1500);
 
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
@@ -37,11 +37,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+  
         <div className="col-md-12 d-flex">
           <div className="col-md-3 introText slideIn">
-            <div className="d-flex">
-              <p style={{marginRight: "1rem"}}>{phrases[currentPhraseIndex].text}</p>
+            <div className="d-flex align-items-center"> 
+              <p style={{ marginRight: "1rem" }}>{phrases[currentPhraseIndex].text}</p>
               {phrases[currentPhraseIndex].image && (
                 <img src={phrases[currentPhraseIndex].image} alt="" style={{ height: "2rem" }} />
               )}
@@ -90,6 +90,7 @@ const Home = () => {
       </div>
     </>
   );
+  
 };
 
 export default Home;

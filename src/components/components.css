@@ -120,3 +120,75 @@
 .leftSlide {
     animation: leftSlide 1s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        /* Added padding for better spacing on mobile */
+    }
+
+    .col-md-12 {
+        flex-direction: column;
+        /* Change to column layout on mobile */
+        align-items: center;
+        /* Center items on mobile */
+    }
+
+    .col-md-3 {
+        margin-right: 0;
+        /* Remove right margin on mobile */
+    }
+
+    .col-md-2 {
+        margin-left: 0;
+        /* Remove left margin on mobile */
+    }
+}
+
+
+/* about css */
+
+.aboutTxt {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.blueTxt{
+    color: blue;
+}
+
+.aboutImg{
+    height: 12rem;
+    border-radius: 2rem;
+}
+
+
+
+
+.boxes {
+    text-align: left; /* Align text to the left within the box */
+  }
+  
+  .img-container {
+    /* width: 100%; */
+  }
+  
+  .aboutImg {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .text-container {
+    padding: 15px; /* Add padding around the text for better readability */
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .description {
+    font-size: 0.9em;
+    color: #6b7688;
+  }
+  
