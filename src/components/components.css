@@ -257,3 +257,50 @@
 .board{
     font-weight: 700;
 }
+
+
+
+
+/* Contact.css */
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.aboutTxt {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.blueTxt {
+  color: #007bff;
+}
+
+.contact-button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-button:active, .contact-button:focus {
+  background-color: #d4af37; /* Dark Yellow */
+  color: #fff;
+}
