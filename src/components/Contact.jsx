@@ -43,6 +43,9 @@ const Contact = () => {
       <Row className="justify-content-center mt-4 mb-4">
         <Col md={4} sm={6} xs={12} className="text-center mb-3">
           <Button
+            style={{
+              height: "3rem",
+            }}
             onClick={handleEmailClick}
             variant="outline-primary"
             className="contact-button"
@@ -53,6 +56,9 @@ const Contact = () => {
         </Col>
         <Col md={4} sm={6} xs={12} className="text-center mb-3">
           <Button
+            style={{
+              height: "3rem",
+            }}
             onClick={handlePhoneClick}
             variant="outline-success"
             className="contact-button"
@@ -63,6 +69,9 @@ const Contact = () => {
         </Col>
         <Col md={4} xs={12} className="text-center mb-3">
           <Button
+            style={{
+              height: "3rem",
+            }}
             onClick={handleLinkedInClick}
             variant="outline-info"
             className="contact-button"
@@ -84,6 +93,9 @@ const Contact = () => {
       <Row className="justify-content-center mt-4">
         <Col md={4} xs={12} className="text-center">
           <Button
+            style={{
+              height: "3rem",
+            }}
             onClick={handleLeetCodeClick}
             variant="outline-warning"
             className="contact-button"
